@@ -1,0 +1,197 @@
+/* Flex */
+.widgetContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 11px;
+    margin-bottom: 20px;
+}
+
+.widgetHeader {
+    display: flex;
+    flex-direction: row;
+}
+
+.widgetFooter h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Icon Header */
+.widgetIcon {
+    font-size: 30px;
+}
+
+.listIcon {
+    font-size: 23px;
+}
+
+.widgetButton {
+    background-color: #C3B696;
+    border: 1px solid #383838;
+    padding: 5px 20px 0 20px;
+    margin: 0;
+    flex: 1;
+}
+
+.widgetButton:not(:last-child) {
+    border-right: none;
+}
+
+.widgetButton:hover {
+    cursor: pointer;
+    background-color: #4c5a74;
+}
+
+.activeWidgetBtn {
+    background-color: #A48739;
+}
+
+/* Widget Body */
+.widgetBody {
+    background-color: #ffffff;
+    height: auto;
+    border: 1px solid #383838;
+    border-top: none;
+}
+
+@media screen and (min-width: 900px) {
+    .widgetBody {
+        height: 500px;
+    }
+}
+
+.widgetTitle {
+    font-size: 22px;
+}
+
+.widgetWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 15px;
+}
+
+.widgetWrapper h3 {
+    font-size: 18px;
+}
+
+
+
+/* Add Court Time */
+.input-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.input-row input:not(:last-child) {
+    margin-right: 10px;
+}
+
+.widgetLabel {
+    font-weight: bold;
+}
+
+.widgetInput {
+    box-sizing: border-box;
+    flex: 1;
+    width: 175px;
+}
+
+
+
+
+/* Widget Footer */
+.widgetFooter {
+    border: 1px solid #383838;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+.widgetFooter h3 {
+    background-color: #A48739;
+    color: #ffffff;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+}
+
+.widgetFooter p {
+    padding: 3px 0 3px 10px;
+}
+
+.widgetFooter p:first-child {
+    padding-top: 30px;
+}
+
+.addCity {
+    color: #ffffff;
+    font-size: 27px;
+}
+
+.addCity:hover {
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+    .widgetButton:first-child {
+        display: none;
+    }
+}
+
+.widgetSelectInput {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex: 1;
+}
+
+#courtDropdown {
+    margin-right: 10px;
+}
+
+#courtRoomDropdown {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.cityList {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.timePeriodCol {
+    margin-left: 10px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input-wrapper {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .input-wrapper:last-child {
+    margin-right: 0;
+  }
+
+  .mywidgetInput {
+    box-sizing: border-box;
+    flex: 1;
+    width: 5px;
+}
+
+.input-row-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-footer-btn {
+    margin-top: 20px;
+    width: 50%;
+}

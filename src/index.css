@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Families: 
+'Oxygen', sans-serif;
+font-family: 'PT Sans', sans-serif; */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 1rem;
+  background-color: #F8F8F8;
+}
+
+/* Make images easier to work with 
+img {
+  max-width: 100%;
+  display: block;
+}*/
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Overring Base List Styles */
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base Font Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oxygen', sans-serif;
+}
+
+p, a {
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* Overriding Base Link Styles */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* A elements that don't have a class get default styles */
+a:not() {
+  text-decoration-skip-ink: auto;
+}
+
+
+/* Consistent Row Spacing */
+.page-row {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .page-row {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/* Button Styles */
+button {
+  background-color: #a48544;
+  border: none;
+  padding: 5px 10px; /* 5px top and bottom, 10px right and left*/
+  margin: 0 10px;
+  color: #ffffff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.calendarPlaceholderParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendarPlaceholder {
+  width: 800px;
+  max-width: 1200px;
+  height: 800px;
+  background-color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

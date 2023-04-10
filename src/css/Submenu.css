@@ -1,0 +1,117 @@
+/* Nested Submenu */
+.nested-submenu-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+.nested-submenu-link {
+    font-size: 17px;
+}
+
+.mobile-submenu-parent-link {
+    font-size: 17px;;
+}
+
+.nested-link {
+    color: #ffffff;
+    line-height: 40px;
+    font-size: 15.5px;
+}
+
+
+
+.mobile-submenu-parent-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-submenu-parent-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Nested Dropdown Menu */
+.nested-submenu-container {
+    display: flex;
+}
+
+.nested-dropdown-menu {
+    padding-left: 80px;
+}
+
+.submenu-link {
+    color: #ffffff;
+    display: block;
+    font-size: 15px;
+    font-family: 'PT Sans', sans-serif;
+    padding-left: 30px;
+    padding-right: 15px;
+    width: 200px;
+}
+
+/* Desktop Submenu Styles */
+.desktop-submenu-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.desktop-rightArrow {
+    color: #ffffff;
+    padding-right: 10px;
+}
+
+.activeRightArrow {
+    color: #383838;
+}
+.desktop-submenu-link {
+    color: #ffffff;
+    display: block;
+    font-size: 15px;
+    font-family: 'PT Sans', sans-serif;
+    padding-left: 30px;
+    padding-right: 15px;
+    width: 200px;
+}
+.activeSubmenuLink {
+    color: #383838;
+}
+
+.activeSubmenuLink:hover {
+    text-decoration: none;
+}
+
+/* Desktop Nested Submenu */
+.nested-desktop-submenu-container {
+    position: absolute;
+    right: 50px;
+}
+
+.nested-desktop-dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dropdown menu */
+.nested-desktop-dropdown-menu {
+    position: absolute;
+    background-color: #c4b598;
+    left: 217px;
+    top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nested-desktop-dropdown-menu li {
+    display: block;
+    min-width: 200px;
+    padding-left: 20px;
+}
+
+.nested-desktop-dropdown-menu li a {
+    justify-self: center;
+}

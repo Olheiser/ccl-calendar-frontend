@@ -1,0 +1,88 @@
+/* Positioning elements */
+#titlebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e3e3e3;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #ffffff;
+}
+
+.titleSocials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titleUL {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titleUL li {
+    margin-right: 11px;
+    display: inline;
+}
+
+.titleUL li:last-child {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+li p {
+    display: inline;
+}
+
+.hdr-icon {
+    padding-top: 5px;
+}
+
+/* Text */
+#titlebar p {
+    font-size: 14px;
+    line-height: 30px;
+    color: #383838;
+}
+
+.titleLink { 
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.widgetPhoneNumber {
+    color: #383838;
+    font-weight: bold;
+}
+
+/* Button Styles */
+.titleButton {
+    background-color: #a48544;
+    border: none;
+    padding: 5px 10px; /* 5px top and bottom, 10px right and left*/
+    margin: 0 10px;
+    color: #ffffff;
+}
+
+.titleButton:hover {
+    background-color: #4c5a74;
+}
+
+/* Must place at the end, prior to media queries */
+.titleSocials {
+    display: none;
+}
+
+/* Display the social widget on bigger screens */
+@media screen and (min-width: 925px) {
+    .titleSocials {
+        display: flex;
+    }
+
+    #titlebar {
+        justify-content: space-between;
+    }
+}

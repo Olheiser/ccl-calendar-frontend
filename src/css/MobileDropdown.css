@@ -1,0 +1,92 @@
+/* Flex Layout */
+.mobile-dropdown-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.mobile-parent-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-parent-link {
+    font-size: 19px;
+    line-height: 20.4px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Down and Up Arrow Icons */
+
+.mobile-angle-down {
+    margin-right: 30px;
+    font-size: 25px;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.mobile-angle-down:hover {
+    color: #383838;
+    cursor: pointer;
+}
+
+.mobile-angle-up {
+    margin-right: 30px;
+    font-size: 25px;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.mobile-angle-up:hover {
+    color: #383838;
+    cursor: pointer;
+}
+
+/* Padding */
+
+.mobile-submenu-link {
+    text-align: left;
+    margin-left: 30px;
+    color: #ffffff;
+    display: block;
+    font-size: 17px;
+    font-family: 'PT Sans', sans-serif;
+    padding-left: 25px;
+}
+
+.submenu-link:hover {
+    text-decoration: none;
+    color: #383838;
+}
+
+
+
+/* Font Styles */
+
+
+
+.mobile-submenu-li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.mobile-dropdown-btn {
+    border-radius: 5px;
+    padding: 0px 30px;
+    background-color: #c4b598;
+    color: #ffffff;
+    font-size: 19px;
+    line-height: 36.1px;
+}
+
+
+
+
+
+
+
+
