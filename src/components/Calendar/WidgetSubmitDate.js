@@ -116,7 +116,7 @@ function groupByCourtDate(courtSittings) {
     
 
     // First, I need to fetch all courtSittings for a specific city
-    const courtSittingsResponse = await fetch(`http://localhost:8000/api/courtSittings/city/${court_ID}`);
+    const courtSittingsResponse = await fetch(`${baseURL}api/courtSittings/city/${court_ID}`);
     const courtSittings = await courtSittingsResponse.json();
     console.log(`Court Sittings: ${courtSittings}`)
 
@@ -152,7 +152,7 @@ function groupByCourtDate(courtSittings) {
 
     // Third, I can create a POST request to submit the form
     // Make a POST request to submit the form
-    const courtAttendanceResponse = await fetch("http://localhost:8000/api/courtAttendance", {
+    const courtAttendanceResponse = await fetch(`${baseURL}api/courtAttendance`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
