@@ -10,7 +10,8 @@ export default function Attendees() {
     const [hasCityAttendees, setHasCityAttendees] = useState(false);
     let filteredCourtSittings = [];
 
-    if (selectedDaySittings) {
+    if (selectedDaySittings && filters && filters.cities) {
+        console.log(`selectedDaySittings: ${selectedDaySittings}`);
         filteredCourtSittings = selectedDaySittings.filter(appearance => filters.cities.includes(appearance.court_ID.city));
         console.log(`Filtered Sittings: ${JSON.stringify(filteredCourtSittings)}`);
     }
