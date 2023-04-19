@@ -76,7 +76,7 @@ const LoginModal = (props) => {
     }
 
     function getUserCourtAttendance(userID) {
-        fetch(`${baseURL}api/courtAttendance/user/${userID}`, {
+        fetch(`${baseURL}courtAttendance/user/${userID}`, {
             method: "GET",
             headers: {
               "Content-Type": "application/json"
@@ -102,7 +102,7 @@ const LoginModal = (props) => {
     }
 
     function getCourtSittings() {
-        fetch(`${baseURL}api/courtSittings/`, {
+        fetch(`${baseURL}courtSittings/`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"

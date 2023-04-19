@@ -10,7 +10,7 @@ export default function AddCourtTime() {
     const {baseURL, userID, daySelected, setUserCourtDates, setCourtDates} = useContext(GlobalContext);
 
     function getUserCourtAttendance(userID) {
-      fetch(`${baseURL}api/courtAttendance/user/${userID}`, {
+      fetch(`${baseURL}courtAttendance/user/${userID}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json"
@@ -36,7 +36,7 @@ export default function AddCourtTime() {
   }
   
   function getCourtSittings() {
-      fetch(`${baseURL}api/courtSittings/`, {
+      fetch(`${baseURL}courtSittings/`, {
           method: "GET",
           headers: {
               "Content-Type": "application/json"
@@ -116,7 +116,7 @@ export default function AddCourtTime() {
         
     
         // First, I need to fetch all courtSittings for a specific city
-        const courtSittingsResponse = await fetch(`${baseURL}api/courtSittings/city/${court_ID}`);
+        const courtSittingsResponse = await fetch(`${baseURL}courtSittings/city/${court_ID}`);
         const courtSittings = await courtSittingsResponse.json();
     
         // Second, I need to get the courtSitting_ID by matching the submitted date to the sitting date
@@ -150,7 +150,7 @@ export default function AddCourtTime() {
     
         // Third, I can create a POST request to submit the form
         // Make a POST request to submit the form
-        const courtAttendanceResponse = await fetch(`${baseURL}api/courtAttendance`, {
+        const courtAttendanceResponse = await fetch(`${baseURL}courtAttendance`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -87,7 +87,7 @@ const AccountModal = (props) => {
         return;
     }
 
-    fetch(`${baseURL}api/users/${userID._id}`, {
+    fetch(`${baseURL}users/${userID._id}`, {
         method: "PATCH",
         headers: {
             "Content-Type": "application/json"
