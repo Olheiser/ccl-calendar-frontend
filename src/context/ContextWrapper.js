@@ -15,7 +15,7 @@ export default function ContextWrapper(props) {
     const [showRegister, setShowRegister] = useState(false);
     const [showForgotPassword, setShowForgotPassword] = useState(false);
     const [dummyVar, setDummyVar] = useState(false);
-    const [baseURL, setBaseURL] = useState('https://ccl-calendar-backend.onrender.com/'); //http://localhost:8000/
+    const [baseURL, setBaseURL] = useState('https://api.canadacriminallawyer.ca/'); //http://localhost:8000/ // https://api.canadacriminallawyer.ca/ // https://ccl-calendar-backend.onrender.com/
     const [userID, setUserID] = useState({});
     const [userCourtDates, setUserCourtDates] = useState([]);
     const [courtDates, setCourtDates] = useState([]);
