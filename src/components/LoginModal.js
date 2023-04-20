@@ -188,7 +188,7 @@ const LoginModal = (props) => {
                         type="email" 
                         name="email" 
                         id="loginEmail" 
-                        className="inputField" 
+                        className="inputField modal-input" 
                         placeholder='Please enter your email address'
                         onChange={handleChange}
                         value={formData.email}
@@ -200,7 +200,7 @@ const LoginModal = (props) => {
                         type="password" 
                         name="password" 
                         id="loginPassword" 
-                        className="inputField" 
+                        className="inputField modal-input" 
                         placeholder='Please enter your password'
                         onChange={handleChange}
                         value={formData.password}

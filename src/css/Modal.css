@@ -21,14 +21,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1000 !important;
 }
 
 /* Modal Container */
-.modal-container {
-    width: 500px;
-    background-color: #e9e9e9;
-    border-radius: 10px;
-}
+
 
 .modal-header, .modal-footer {
     padding: 10px;
@@ -45,16 +42,6 @@
 
 .modal-title {
     margin: 0;
-}
-
-.modal-body {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 
 .modal-footer {
@@ -131,18 +118,9 @@
     padding-bottom: 20px;
 }
 
-.inputField {
-    margin-bottom: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-}
 
-.selectInput {
-    margin-bottom: 15px;
-    padding: 8px 5px 8px 5px;
-    width: 200px;
-}
+
+
 
 .selectInput:placeholder {
     font-family: 'PT Sans', sans-serif;
@@ -179,7 +157,59 @@ label {
     display: none;
 }
 
+.modal-container {
+    background-color: #e9e9e9;
+    border-radius: 10px;
+    min-width: 100vw;
+    max-height: 100vh;
+    overflow-y: auto;
+}
 
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
+.inputField {
+    margin-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}*/
 
+.modal-input {
+    width: 100%;
+}
+
+.selectInput {
+    margin-bottom: 15px;
+    padding: 8px 5px 8px 5px;
+    width: 100%;
+}
+
+.input-container {
+    width: 100%;
+}
+
+@media screen and (min-width: 450px) {
+    
+
+    .modal-body {
+        padding: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .modal-container {
+        width: 500px;
+        min-width: 450px;
+        max-width: 700px;
+        max-height: 100vh;
+    }
+}

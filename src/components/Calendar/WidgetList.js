@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import GlobalContext from '../../context/GlobalContext'
+import './../../css/FilterWidget.css'
 
 function UserCourtDates({ courtAttendances }) {
 
@@ -29,7 +30,7 @@ export default function WidgetList() {
   const {userCourtDates} = useContext(GlobalContext);
 
   return (
-    <div className="widgetWrapper">
+    <div className="widgetWrapper cntr-overflow">
         {/* Sort functionality to include: Chronological, by City, Court Type*/}
         <h2 className="widgetTitle">Your Court Dates</h2>
         <UserCourtDates courtAttendances={userCourtDates}/>

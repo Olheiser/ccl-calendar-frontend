@@ -58,9 +58,7 @@
 }
 
 @media screen and (min-width: 900px) {
-    .widgetBody {
-        height: 500px;
-    }
+    
 }
 
 .widgetTitle {
@@ -145,6 +143,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     flex: 1;
+    width: 50%;
 }
 
 #courtDropdown {
@@ -194,4 +193,20 @@
 .modal-footer-btn {
     margin-top: 20px;
     width: 50%;
+}
+
+.cntr-overflow {
+    overflow-y: auto;
+    max-height: 485px;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+.court-input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.optional-court-input {
+    width: 100%;
 }

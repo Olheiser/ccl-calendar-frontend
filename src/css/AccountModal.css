@@ -1,13 +1,17 @@
 .account-row {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
     margin-bottom: 15px;
+    width: 100%;
 }
 
-.input-container input {
-    width: 200px;
+.account-input-container {
+    width: 100%;
+}
+
+.account-input, #account_province {
+    width: calc(100% - 76px);
 }
 
 .pencilBtn {
@@ -30,3 +34,7 @@
     font-size: 17px;
     padding-bottom: 0;
 }
+
+/*@media screen and (min-width: 450px) {
+    .account-row {}
+}*/

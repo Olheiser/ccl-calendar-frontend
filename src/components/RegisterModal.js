@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react';
-import './../css/RegisterModal.css';
 import './../css/Modal.css';
 import LoginModal from './LoginModal';
 import GlobalContext from "../context/GlobalContext";
@@ -108,7 +107,7 @@ const RegisterModal = (props) => {
                 <form className="modal-body" onSubmit={handleSubmit}>
                     <label htmlFor="first_name">First Name</label>
                     <input 
-                        className="inputField" 
+                        className="inputField modal-input" 
                         type="text" 
                         placeholder="Enter your First Name" 
                         name="first_name" 
@@ -120,7 +119,7 @@ const RegisterModal = (props) => {
 
                     <label htmlFor="last_name">Last Name</label>
                     <input 
-                        className="inputField" 
+                        className="inputField modal-input" 
                         type="text" 
                         placeholder="Enter your Last Name" 
                         name="last_name" 
@@ -132,7 +131,7 @@ const RegisterModal = (props) => {
 
                     <label htmlFor="city">City</label>
                     <input 
-                        className="inputField" 
+                        className="inputField modal-input" 
                         type="text" 
                         placeholder="Enter your City" 
                         name="city" 
@@ -169,7 +168,7 @@ const RegisterModal = (props) => {
                    
                     <label htmlFor="email">Email Address</label>
                     <input 
-                        className="inputField" 
+                        className="inputField modal-input" 
                         type="email" 
                         placeholder="Enter your Email Address" 
                         name="email" 
@@ -181,7 +180,7 @@ const RegisterModal = (props) => {
 
                     <label htmlFor="phone_number">Phone Number</label>
                     <input 
-                        className="inputField" 
+                        className="inputField modal-input" 
                         type="tel" 
                         placeholder="Enter your Phone Number" 
                         name="phone_number" 
@@ -192,7 +191,7 @@ const RegisterModal = (props) => {
 
                     <label htmlFor="password">Password</label>
                     <input 
-                        className="inputField" 
+                        className="inputField modal-input" 
                         type="password" 
                         placeholder="Enter your password" 
                         name="password" 
@@ -204,7 +203,7 @@ const RegisterModal = (props) => {
 
                     <label htmlFor="confirm_password">Confirm Password</label>
                     <input 
-                        className="inputField" 
+                        className="inputField modal-input" 
                         type="password" 
                         placeholder="Confirm your password" 
                         name="confirm_password" 

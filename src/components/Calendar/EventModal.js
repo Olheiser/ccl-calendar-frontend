@@ -13,7 +13,7 @@ export default function EventModal() {
         
   return (
     <div onClick={() => setShowEventModal(false)} className={`h-screen w-full fixed left-0 top-0 flex justify-center items-center event-modal-overlay`}>{/* Overlay */}
-        <div onClick={e => e.stopPropagation()} className="bg-white rounded-lg shadow-2xl event-w">
+        <div onClick={e => e.stopPropagation()} className="bg-white rounded-lg shadow-2xl event-w modal-container">
             <header className="bg-gray-100 px-4 py-2 flex justify-between items-center">
                 <h3>{daySelected.format("dddd, MMMM DD")}</h3>
                 <button onClick={() => setShowEventModal(false)}>

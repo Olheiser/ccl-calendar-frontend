@@ -143,9 +143,9 @@ const AccountModal = (props) => {
                 <form className="modal-body" onSubmit={handleSubmit}>
                     <div className="account-row">
                         <label htmlFor="firstName">First Name</label>
-                        <div className="input-container">
+                        <div className="input-container account-input-container">
                             <input 
-                                className="inputField" 
+                                className="inputField account-input" 
                                 type="text" 
                                 placeholder={userID.first_name} 
                                 name="first_name" 
@@ -163,9 +163,9 @@ const AccountModal = (props) => {
 
                     <div className="account-row">
                         <label htmlFor="lastName">Last Name</label>
-                        <div className="input-container">
+                        <div className="input-container account-input-container">
                             <input 
-                                className="inputField" 
+                                className="inputField account-input" 
                                 type="text" 
                                 placeholder={userID.last_name} 
                                 name="last_name" 
@@ -184,9 +184,9 @@ const AccountModal = (props) => {
 
                     <div className="account-row">
                         <label htmlFor="city">City</label>
-                        <div className="input-container">
+                        <div className="input-container account-input-container">
                             <input 
-                                className="inputField" 
+                                className="inputField account-input" 
                                 type="text" 
                                 placeholder={userID.city} 
                                 name="city" 
@@ -204,7 +204,7 @@ const AccountModal = (props) => {
 
                     <div className="account-row">
                         <label htmlFor="provinces">Province</label>
-                        <div className="input-container">
+                        <div className="input-container account-input-container">
                             <select 
                                 className="selectInput" 
                                 id="account_province" 
@@ -237,9 +237,9 @@ const AccountModal = (props) => {
 
                     <div className="account-row">
                         <label htmlFor="email">Email Address</label>
-                        <div className="input-container">
+                        <div className="input-container account-input-container">
                             <input 
-                                className="inputField" 
+                                className="inputField account-input" 
                                 type="email" 
                                 placeholder={userID.email} 
                                 name="email" 
@@ -257,9 +257,9 @@ const AccountModal = (props) => {
 
                     <div className="account-row">
                         <label htmlFor="phone">Phone Number</label>
-                        <div className="input-container">
+                        <div className="input-container account-input-container">
                             <input 
-                                className="inputField" 
+                                className="inputField account-input" 
                                 type="tel" 
                                 placeholder={userID.phone_number ? userID.phone_number : 'Phone Number'} 
                                 name="phone_number" 
@@ -277,9 +277,9 @@ const AccountModal = (props) => {
 
                     <div className="account-row">
                         <label htmlFor="passworda">{passwordEditMode == false ? `Password` : `New Password`}</label>
-                        <div className="input-container">
+                        <div className="input-container account-input-container">
                             <input 
-                                className="inputField" 
+                                className="inputField account-input" 
                                 type="password" 
                                 placeholder={!passwordEditMode ? "" : "New Password"} 
                                 name="password" 
@@ -296,9 +296,9 @@ const AccountModal = (props) => {
                     {passwordEditMode && (
                         <div className="account-row">
                             <label htmlFor="passwordb">Confirm Password</label> {/* The string length displaces items*/}
-                            <div className="input-container">
+                            <div className="input-container account-input-container">
                                 <input 
-                                    className="inputField" 
+                                    className="inputField account-input" 
                                     type="password" 
                                     placeholder="Confirm Password" 
                                     name="password" 

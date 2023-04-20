@@ -219,7 +219,7 @@ function groupByCourtDate(courtSittings) {
             <option value="Warman">Warman</option>
             <option value="Weyburn">Weyburn</option>
             <option value="Yorkton">Yorkton</option>
-        </select>
+          </select>
 
         </div>
 
@@ -259,10 +259,11 @@ function groupByCourtDate(courtSittings) {
 
         {/* Must Select a City to Interact with This; readOnly unless city is selected */}
         <label htmlFor="" className="widgetLabel">{`(Optional) Provide Court Information`}</label>
-        <div className="input-row">
+        <div className="input-row court-input-container">
           {/* Provincial Court, Court of King's Bench */}
+          <label htmlFor="" className="widgetLabel">Court</label>
           <select 
-            className="selectInput mywidgetInput" 
+            className="selectInput mywidgetInput optional-court-input" 
             id="courtDropdown" 
             name="courtDropdown" 
             value={formData.court_type}
@@ -274,8 +275,9 @@ function groupByCourtDate(courtSittings) {
             <option value="Appeal Court">Appeal Court</option>
           </select>
           {/* Only display when a city is selected*/}
+          <label htmlFor="" className="widgetLabel">Prosecutor</label>
           <input 
-            className="inputField mywidgetInput" 
+            className="inputField mywidgetInput optional-court-input" 
             type="text" 
             placeholder="Prosecutor" 
             name="prosecutor" 
@@ -284,9 +286,10 @@ function groupByCourtDate(courtSittings) {
             onChange={handleChange} 
           />
           
+          <label htmlFor="" className="widgetLabel">Courtroom</label>
           <input 
             type="number"
-            className="inputField mywidgetInput" 
+            className="inputField mywidgetInput optional-court-input" 
             id="courtRoom" 
             name="courtRoom" 
             placeholder="Enter your City" 
