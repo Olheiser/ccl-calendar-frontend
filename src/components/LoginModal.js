@@ -12,6 +12,7 @@ const LoginModal = (props) => {
     const [showForgotPassword, setShowForgotPassword] = useState(false);
     const [errorMessage, showErrorMessage] = useState(false);
     const {baseURL, loggedIn, setStatus, userID, setUserID, userCourtDates, setUserCourtDates, courtDates, setCourtDates} = useContext(GlobalContext);
+    const [isLoading, setIsLoading] = useState(false);
 
     const initialFormData = {
         email: "",
@@ -38,6 +39,8 @@ const LoginModal = (props) => {
 
         showErrorMessage(false);
         event.preventDefault();
+
+        setIsLoading(true);
 
         fetch(`${baseURL}auth/login`, {
             method: "POST",
@@ -67,10 +70,13 @@ const LoginModal = (props) => {
             resetFormData();
             props.onClose();
             getUserCourtAttendance(data._id);
+            setIsLoading(false);
           })
           .catch(error => {
+            setIsLoading(false);
             showErrorMessage(true);
             console.error("Error logging in user:", error);
+            
           });
     }
 
@@ -166,6 +172,8 @@ const LoginModal = (props) => {
                 
                     <div className="modal-footer">
                     <button type="submit" className="modal-footer-btn">Login</button>
+
+                    {isLoading && <div className="spinner"></div>}
 
                     {errorMessage && (
                         <p>Login unsuccessful.</p>

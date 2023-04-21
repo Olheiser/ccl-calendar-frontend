@@ -213,3 +213,19 @@ label {
         max-height: 100vh;
     }
 }
+
+/* Loading Animation */
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: rgb(187, 187, 187);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+      }
+}
