@@ -145,3 +145,13 @@ button:hover {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+#install-container {
+  display: flex;
+  justify-content: center;
+}
+
+#install-button {
+  border-radius: 5px;
+  font-family: 'PT Sans', sans-serif;
+}
