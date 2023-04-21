@@ -90,6 +90,7 @@
 
 .widgetLabel {
     font-weight: bold;
+    font-size: 18px;
 }
 
 .widgetInput {
@@ -209,4 +210,69 @@
 
 .optional-court-input {
     width: 100%;
+}
+/* Checkbox */
+/* Hide the default checkbox */
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .cityList li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 10px;
+  }
+  
+  /* Style the checkbox when it's checked */
+  input[type="checkbox"]:checked + label::before {
+    content: "\2713";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-color: #C4B598;
+    font-size: 14x;
+    text-align: center;
+    line-height: 15px;
+    color: #fff;
+  }
+  
+  /* Style the checkbox when it's not checked */
+  .cityList label::before {
+    content: "\2713";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #A48739;
+    font-size: 14x;
+    text-align: center;
+    line-height: 15px;
+    color: #fff;
+  }
+
+  .spacer {
+    padding-left: 6px;
+  }
+  
+  /* WidgetCities */
+  .cityIcon {
+    pointer-events: all;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .city-flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+
+  .icon-container {
+    display: flex;
+    align-items: center;
 }

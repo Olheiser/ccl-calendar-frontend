@@ -8,7 +8,7 @@ const TitleBar = () => {
     return (
         <section className="flex-row page-row" id="titlebar">
             <div className="titleCTA">
-                <p className="titleType">Talk to a Lawyer Day or Night 24/7 <a className="titleLink" href="tel:8555851777"><button className="titleButton">Call Now</button></a></p>
+                <p className="titleType">Join our network to get client leads <a className="titleLink" target="_blank" href="https://canadacriminallawyer.ca/network"><button type="button" className="titleButton">Learn More</button></a></p>
             </div>
 
             <div className="titleSocials">

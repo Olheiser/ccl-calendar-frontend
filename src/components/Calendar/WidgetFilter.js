@@ -20,7 +20,7 @@ export default function WidgetFilter() {
     }
   };
 
-  const handleCityChange = (event) => {
+  /*const handleCityChange = (event) => {
     const { name, checked } = event.target;
     const cities = filters.cities;
     if (checked) {
@@ -28,12 +28,27 @@ export default function WidgetFilter() {
     } else {
       updateFiltersAndStorage({...filters, cities: cities.filter((city) => city !== name)});
     }
+  };*/
+  const handleCityChange = (event) => {
+    // grab the values of the target checkbox
+    const { name, checked } = event.target;
+    // grab the cities object from the filters object
+    const cities = { ...filters.cities };
+
+    if (checked) {
+      cities[name] = { city: name, hidden: false };
+      updateFiltersAndStorage({...filters, cities })
+    } else {
+      delete cities[name];
+      updateFiltersAndStorage({...filters, cities})
+    }
   };
+
 
   return (
     <div className="widgetWrapper">
         <h2 className="widgetTitle">Filters</h2>
-
+        {/* 
         <label className="widgetLabel">Display Court Types</label>
         <ul>
           <li>
@@ -66,7 +81,7 @@ export default function WidgetFilter() {
             onChange={handleCourtTypeChange}
           />
             Appeal Court</li>
-        </ul>
+        </ul>*/}
 
         <label className="widgetLabel">Cities</label>
         <ul className="cityList">
@@ -76,10 +91,10 @@ export default function WidgetFilter() {
               name="Estevan" 
               id="Estevan"
               value="Estevan"
-              checked={filters.cities && filters.cities.includes('Estevan')}
-            onChange={handleCityChange} 
+              checked={filters.cities && Object.keys(filters.cities).includes("Estevan")}
+              onChange={handleCityChange} 
             />
-            Estevan
+            <label htmlFor="Estevan"><span className="spacer"></span>Estevan</label>
           </li>
           <li>
             <input 
@@ -87,10 +102,10 @@ export default function WidgetFilter() {
               name="Kindersley" 
               id="Kindersley"
               value="Kindersley"
-              checked={filters.cities && filters.cities.includes('Kindersley')}
-            onChange={handleCityChange} 
+              checked={filters.cities && Object.keys(filters.cities).includes("Kindersley")}
+              onChange={handleCityChange} 
             />
-            Kindersley
+            <label htmlFor="Kindersley"><span className="spacer"></span>Kindersley</label>
           </li>
           <li>
             <input 
@@ -98,10 +113,10 @@ export default function WidgetFilter() {
               name="Melville" 
               id="Melville"
               value="Melville"
-              checked={filters.cities && filters.cities.includes('Melville')}
-            onChange={handleCityChange} 
+              checked={filters.cities && Object.keys(filters.cities).includes("Melville")}
+              onChange={handleCityChange} 
             />
-            Melville
+            <label htmlFor="Melville"><span className="spacer"></span>Melville</label>
           </li>
           <li>
             <input 
@@ -109,10 +124,10 @@ export default function WidgetFilter() {
               name="Moose Jaw" 
               id="Moose Jaw"
               value="Moose Jaw"
-              checked={filters.cities && filters.cities.includes('Moose Jaw')}
-            onChange={handleCityChange} 
+              checked={filters.cities && Object.keys(filters.cities).includes("Moose Jaw")}
+              onChange={handleCityChange} 
             />
-            Moose Jaw
+            <label htmlFor="Moose Jaw"><span className="spacer"></span>Moose Jaw</label>
           </li>
           <li>
             <input 
@@ -120,10 +135,10 @@ export default function WidgetFilter() {
               name="North Battlefords" 
               id="North Battlefords"
               value="North Battlefords"
-              checked={filters.cities && filters.cities.includes('North Battlefords')}
-            onChange={handleCityChange} 
+              checked={filters.cities && Object.keys(filters.cities).includes("North Battlefords")}
+              onChange={handleCityChange} 
             />
-            North Battlefords
+            <label htmlFor="North Battlefords"><span className="spacer"></span>North Battlefords</label>
           </li>
           <li>
             <input 
@@ -131,21 +146,21 @@ export default function WidgetFilter() {
               name="Prince Albert" 
               id="Prince Albert"
               value="Prince Albert"
-              checked={filters.cities && filters.cities.includes('Prince Albert')}
-            onChange={handleCityChange} 
+              checked={filters.cities && Object.keys(filters.cities).includes("Prince Albert")}
+              onChange={handleCityChange} 
             />
-            Prince Albert
+            <label htmlFor="Prince Albert"><span className="spacer"></span>Prince Albert</label>
           </li>
           <li>
             <input 
               type="checkbox" 
               name="Regina" 
               id="Regina" 
-              checked={filters.cities && filters.cities.includes('Regina')}
+              checked={filters.cities && Object.keys(filters.cities).includes("Regina")}
               value="Regina"
-            onChange={handleCityChange}
+              onChange={handleCityChange}
             />
-            Regina
+            <label htmlFor="Regina"><span className="spacer"></span>Regina</label>
           </li>
           <li>
             <input 
@@ -153,10 +168,10 @@ export default function WidgetFilter() {
               name="Saskatoon" 
               id="Saskatoon"
               value="Saskatoon"
-              checked={filters.cities && filters.cities.includes('Saskatoon')}
-            onChange={handleCityChange} 
+              checked={filters.cities && Object.keys(filters.cities).includes("Saskatoon")}
+              onChange={handleCityChange} 
             />
-            Saskatoon
+            <label htmlFor="Saskatoon"><span className="spacer"></span>Saskatoon</label>
           </li>
           <li>
             <input 
@@ -164,10 +179,10 @@ export default function WidgetFilter() {
               name="Swift Current" 
               id="Swift Current"
               value="Swift Current"
-              checked={filters.cities && filters.cities.includes('Swift Current')}
-            onChange={handleCityChange} 
+              checked={filters.cities && Object.keys(filters.cities).includes("Swift Current")}
+              onChange={handleCityChange} 
             />
-            Swift Current
+            <label htmlFor="Swift Current"><span className="spacer"></span>Swift Current</label>
           </li>
           <li>
             <input 
@@ -175,10 +190,10 @@ export default function WidgetFilter() {
               name="Warman" 
               id="Warman"
               value="Warman"
-              checked={filters.cities && filters.cities.includes('Warman')}
+              checked={filters.cities && Object.keys(filters.cities).includes("Warman")}
             onChange={handleCityChange} 
             />
-            Warman
+            <label htmlFor="Warman"><span className="spacer"></span>Warman</label>
           </li>
           <li>
             <input 
@@ -186,10 +201,10 @@ export default function WidgetFilter() {
               name="Weyburn" 
               id="Weyburn"
               value="Weyburn"
-              checked={filters.cities && filters.cities.includes('Weyburn')}
+              checked={filters.cities && Object.keys(filters.cities).includes("Weyburn")}
             onChange={handleCityChange} 
             />
-            Weyburn
+            <label htmlFor="Weyburn"><span className="spacer"></span>Weyburn</label>
           </li>
           <li>
             <input 
@@ -197,10 +212,10 @@ export default function WidgetFilter() {
               name="Yorkton" 
               id="Yorkton"
               value="Yorkton"
-              checked={filters.cities && filters.cities.includes('Yorkton')}
+              checked={filters.cities && Object.keys(filters.cities).includes("Yorkton")}
             onChange={handleCityChange} 
             />
-            Yorkton
+            <label htmlFor="Yorkton"><span className="spacer"></span>Yorkton</label>
           </li>
         </ul>
     </div>

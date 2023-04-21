@@ -26,10 +26,23 @@ export default function ContextWrapper(props) {
     // If there are no filters or the cities property is not an array, set default filters
     const defaultFilters = {
       court_type: ["Provincial Court", "Kings Bench"],
-      cities: ["Regina", "Saskatoon", "Weyburn"],
+      cities: {
+        Regina: {
+          city: "Regina",
+          hidden: false
+        },
+        Saskatoon: {
+          city: "Saskatoon",
+          hidden: false
+        },
+        Weyburn: {
+          city: "Weyburn",
+          hidden: false
+        }
+      }
     };
 
-    const initialFilters = localStorageFilters && Array.isArray(localStorageFilters.cities)
+    const initialFilters = localStorageFilters && typeof localStorageFilters.cities === "object"
       ? localStorageFilters
       : defaultFilters;
 

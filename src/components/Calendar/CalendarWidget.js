@@ -5,6 +5,7 @@ import WidgetList from './WidgetList';
 import WidgetSubmitDate from './WidgetSubmitDate';
 import Month from './Month';
 import GlobalContext from '../../context/GlobalContext';
+import WidgetCities from './WidgetCities';
 
 export default function CalendarWidget({month}) {
     const {screenSize} = useContext(GlobalContext)
@@ -41,12 +42,7 @@ export default function CalendarWidget({month}) {
             {componentToDisplay}
         </div>
         {screenSize !== 'small' && (
-            <div className="widgetFooter">
-                <h3><span>Cities Displayed</span><span onClick={() => setWidgetComponent("filter")} className="material-symbols-outlined addCity">add_box</span></h3>
-                {/* Icons: Remove, Hide/View */}
-                <p>Regina</p>
-                <p>Saskatoon</p>
-            </div>
+            <WidgetCities addCityClick={setWidgetComponent} />
         )}
         
     </div>

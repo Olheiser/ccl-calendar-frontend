@@ -56,7 +56,7 @@ const AccountModal = (props) => {
             inputElement.value = userID[fieldName];
         } 
 
-        inputElement.focus();
+        //inputElement.focus();
         showErrorMessage(false);
         showSuccessMessage(false);
     }

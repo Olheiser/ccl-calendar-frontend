@@ -11,9 +11,12 @@ export default function Attendees() {
     let filteredCourtSittings = [];
 
     if (selectedDaySittings && filters && filters.cities) {
-        console.log(`selectedDaySittings: ${selectedDaySittings}`);
-        filteredCourtSittings = selectedDaySittings.filter(appearance => filters.cities.includes(appearance.court_ID.city));
-        console.log(`Filtered Sittings: ${JSON.stringify(filteredCourtSittings)}`);
+        filteredCourtSittings = selectedDaySittings.filter(appearance => {
+            const city = appearance.court_ID.city;
+            return (
+              Object.keys(filters.cities).includes(city) && !filters.cities[city].hidden
+            );   
+        })
     }
 
     return (
