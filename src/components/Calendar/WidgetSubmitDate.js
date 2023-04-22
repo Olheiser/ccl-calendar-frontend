@@ -293,7 +293,7 @@ function groupByCourtDate(courtSittings) {
             className="inputField mywidgetInput optional-court-input" 
             id="courtRoom" 
             name="courtRoom" 
-            placeholder="Enter your City" 
+            placeholder="Enter the courtroom number" 
             value={formData.courtRoom}
             onChange={handleChange}
           >
