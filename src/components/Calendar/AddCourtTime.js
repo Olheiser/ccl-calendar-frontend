@@ -252,17 +252,18 @@ export default function AddCourtTime() {
         </div>
 
         {/* Must Select a City to Interact with This; readOnly unless city is selected */}
-        <label htmlFor="" className="widgetLabel">{`(Optional) Provide Court Information`}</label>
+        <label htmlFor="" className="widgetLabel">{`Provide Court Information`}</label>
         <div className="input-row court-input-container">
         
           {/* Provincial Court, Court of King's Bench */}
-          <label htmlFor="" className="widgetLabel">Court</label>
+          <label htmlFor="court_type" className="widgetLabel">Court</label>
           <select 
             className="selectInput mywidgetInput optional-court-input" 
-            id="courtDropdown" 
-            name="courtDropdown" 
+            id="court_type" 
+            name="court_type" 
             value={formData.court_type}
             onChange={handleChange}
+            required
           >
             <option value="">Select Court</option>
             <option value="Provincial Court">Provincial Court</option>
@@ -295,7 +296,7 @@ export default function AddCourtTime() {
         </div>
 
          {/* Must Select a City to Interact with This */}
-         <label htmlFor="" className="widgetLabel">{`(Optional) Description`}</label>
+         <label htmlFor="" className="widgetLabel">{`Description`}</label>
           <div className="input-row">
             {/* Provincial Court, Court of King's Bench */}
             <textarea id="description" className="widgetInput" type="textarea" placeholder="This is a description that is only visible to you." />
