@@ -276,3 +276,7 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
 }
+
+.selectedCity {
+    border-left: 2px solid #A48739;
+}
