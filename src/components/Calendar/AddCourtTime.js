@@ -1,13 +1,14 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import dayjs from 'dayjs';
 import './../../css/FilterWidget.css'
-import { saskatchewan } from '../../util/cities';
+import { saskatchewan, skProvincialCourtOffices } from '../../util/cities';
 import GlobalContext from '../../context/GlobalContext';
 
 export default function AddCourtTime() {
     const [errorMessage, showErrorMessage] = useState(false);
     const [successMessage, showSuccessMessage] = useState(false);
     const {baseURL, userID, daySelected, setUserCourtDates, setCourtDates} = useContext(GlobalContext);
+    const [selectedCity, setSelectedCity] = useState("");
 
     function getUserCourtAttendance(userID) {
       fetch(`${baseURL}courtAttendance/user/${userID}`, {
@@ -79,7 +80,9 @@ export default function AddCourtTime() {
   }
 
   const [formData, setFormData] = useState({
+      province: "",
       city: "",
+      circuitPoint: "",
       date: daySelected.format('YYYY-MM-DD'),
       court_type: "",
       timePeriod: "",
@@ -89,10 +92,30 @@ export default function AddCourtTime() {
       description: ""
   });
 
+  // The option needs to be reset on the circuitPoint 
+  // if target.value == city or circuit point?
+  useEffect(() => {
+    if (formData.city !== "" && formData.circuitPoint === "") {
+      setSelectedCity(formData.city);
+    } else if (formData.city !== "" && formData.circuitPoint !== "") {
+      setSelectedCity(formData.circuitPoint);
+    } else {
+      setSelectedCity("");
+    }
+  }, [formData]);
+
     const handleChange = (event) => {
         showErrorMessage(false);
         showSuccessMessage(false);
-        setFormData({ ...formData, [event.target.name]: event.target.value });
+        
+        if (event.target.name == "city") {
+          setFormData({...formData, [event.target.name]: event.target.value, circuitPoint: ""})
+        } else {
+          setFormData({ ...formData, [event.target.name]: event.target.value });
+        }
+
+        
+        
         console.log(`formData: ${JSON.stringify(formData, null, 2)}`)
     }
 
@@ -109,7 +132,8 @@ export default function AddCourtTime() {
         showSuccessMessage(false);
 
         // Match the city to the city ID
-        const court_ID = saskatchewan[formData.city];
+        // !!!!!!!
+        const court_ID = saskatchewan[selectedCity];
         console.log(`CourtID = ${court_ID}`)
     
         // Convert Date to something that can be converted to a date obj
@@ -164,6 +188,8 @@ export default function AddCourtTime() {
           }),
         });
     
+
+        
         const courtAttendanceResult = await courtAttendanceResponse.json();
     
         if (courtAttendanceResult) {
@@ -184,16 +210,18 @@ export default function AddCourtTime() {
       <form onSubmit={handleSubmit}>
         <label htmlFor="city" className="widgetLabel">Select City</label>
         <div className="input-row">
-          <input 
-            className="widgetInput" 
-            type="text" 
-            placeholder="Saskatchewan" 
-            name="province" 
-            id="submitProvince" 
-            readOnly 
-          />
           <select 
             className="widgetSelectInput" 
+            id="submitProvince"
+            name="province"
+            value={formData.province}
+            readOnly 
+          >
+            <option value="Saskatchewan">SK</option>
+          </select>
+
+          <select 
+            className={`widgetSelectInput ${selectedCity === formData.city && formData.city !== "" && `selectedCity`}`} 
             id="submitCity" 
             name="city" 
             value={formData.city} 
@@ -202,20 +230,54 @@ export default function AddCourtTime() {
           >
             <option value="">Select a city</option>
             <option value="Estevan">Estevan</option>
-            <option value="Kindersley">Kindersley</option>
-            <option value="Melville">Melville</option>
+            <option value="La Ronge">La Ronge</option>
+            <option value="Lloydminster">Lloydminster</option>
             <option value="Moose Jaw">Moose Jaw</option>
             <option value="North Battlefords">North Battlefords</option>
             <option value="Prince Albert">Prince Albert</option>
             <option value="Regina">Regina</option>
             <option value="Saskatoon">Saskatoon</option>
             <option value="Swift Current">Swift Current</option>
-            <option value="Warman">Warman</option>
-            <option value="Weyburn">Weyburn</option>
+            <option value="Meadow Lake">Meadow Lake</option>
+            <option value="Melfort">Melfort</option>
             <option value="Yorkton">Yorkton</option>
+            <option value="Wynyard">Wynyard</option>
         </select>
 
+        <select
+            className={`widgetSelectInput ${selectedCity === formData.circuitPoint && formData.circuitPoint !== "" && `selectedCity`}`} 
+            id="submitCircuitPoint" 
+            name="circuitPoint" 
+            value={formData.circuitPoint} 
+            onChange={handleChange} 
+            required
+        >
+            {formData.city && skProvincialCourtOffices[formData.city] ? (
+                <>
+                    <option value="">{`${formData.city} Circuit Points`}</option>
+                    {skProvincialCourtOffices[formData.city].map((option) => (
+                        <option key={option} value={option}>
+                            {option}
+                        </option>
+                    ))}
+                </>
+                ) : (
+                    <option value="">You must select a city</option>
+                )
+            }
+        </select>
+
+
+
         </div>
+        {selectedCity && (<p>Selected city: {selectedCity}.</p>)}
+        
+        {selectedCity === formData.circuitPoint && formData.circuitPoint !== "" ? 
+          <a onClick={() => {
+            setFormData({...formData, circuitPoint: ""}); 
+            setSelectedCity(formData.city)
+          }}>{` Did you mean ${formData.city}?`}</a> : null}
+            
 
         
         <div className="input-row">

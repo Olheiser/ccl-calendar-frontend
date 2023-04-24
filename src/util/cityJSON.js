@@ -1,680 +1,795 @@
-Assiniboia:
-
-{
-    "address": "201 3rd Avenue West",
-    "address2": "Prince of Wales Cultural & Recreational Centre",
-    "postal_code": "S0H 0B0",
-    "city": "Assiniboia",
-    "province": "Saskatchewan",
-    "phone": "3066943612",
-    "fax": "3066943043"
-}
-
-Broadview:
-
-{
-    "address": "715 Main Street",
-    "address2": "Community Hall",
-    "postal_code": "S4R 1W9",
-    "city": "Broadview",
-    "province": "Saskatchewan",
-    "phone": "3067861400",
-    "fax": "3067861422"
-}
-
-Carlyle:
-
-{
-    "address": "102 Main Street",
-    "address2": "Civic Centre",
-    "postal_code": "",
-    "city": "Carlyle",
-    "province": "Saskatchewan",
-    "phone": "3066374528",
-    "fax": "3066374536"
-}
-
-Canora:
-
-{
-    "address": "418 Main Street",
-    "address2": "Canora Town Office Building",
-    "postal_code": "",
-    "city": "Canora",
-    "province": "Saskatchewan",
-    "phone": "3067861400",
-    "fax": "3067861422"
-}
-
-Esterhazy:
-
-{
-    "address": "800 4th Avenue",
-    "address2": "S.N. Boreen Community Centre",
-    "postal_code": "",
-    "city": "Esterhazy",
-    "province": "Saskatchewan",
-    "phone": "3067861400",
-    "fax": "3067861422"
-}
-
-Indian Head:
-
-{
-    "address": "423 Grand Avenue",
-    "address2": "Memorial Hall",
-    "postal_code": "",
-    "city": "Indian Head",
-    "province": "Saskatchewan",
-    "phone": "3067875250",
-    "fax": "3067877037"
-}
-
-Kamsack:
-
-{
-    "address": "241 2nd Street",
-    "address2": "Crowstand Centre",
-    "postal_code": "",
-    "city": "Kamsack",
-    "province": "Saskatchewan",
-    "phone": "3067861400",
-    "fax": "3067861422"
-}
-
-Leader:
-
-{
-    "address": "402 1st Avenue W",
-    "address2": "Community Centre",
-    "postal_code": "",
-    "city": "Leader",
-    "province": "Saskatchewan",
-    "phone": "3067788390",
-    "fax": "3067788581"
-}
-
-Maple Creek:
-
-{
-    "address": "218 Maple Street",
-    "address2": "Legion Hall",
-    "postal_code": "",
-    "city": "Maple Creek",
-    "province": "Saskatchewan",
-    "phone": "3067788390",
-    "fax": "3067788581"
-}
-
-Moosomin:
-
-{
-    "address": "709 Carleton Street",
-    "address2": "Provincial Building",
-    "postal_code": "",
-    "city": "Moosomin",
-    "province": "SaskatchewanSK",
-    "phone": "3067861400",
-    "fax": "3067861422"
-}
-
-Outlook:
-
-{
-    "address": "400 Saskatchewan Avenue West",
-    "address2": "Town Hall",
-    "postal_code": "",
-    "city": "Outlook",
-    "province": "Saskatchewan",
-    "phone": "3069337052",
-    "fax": "3069337043"
-}
-
-Rosetown:
-
-{
-    "address": "814 Highway 4 North",
-    "address2": "Elks Lodge",
-    "postal_code": "",
-    "city": "Rosetown",
-    "province": "Saskatchewan",
-    "phone": "3069337052",
-    "fax": "3069337043"
-}
-
-Shaunavon:
-
-{
-    "address": "401 3rd Street West",
-    "address2": "Court House",
-    "postal_code": "",
-    "city": "Shaunavon",
-    "province": "Saskatchewan",
-    "phone": "3067788390",
-    "fax": "3067788581"
-}
-
-Wadena:
-
-{
-    "address": "254 Main Street North",
-    "address2": "Wadena Community Legion Hall",
-    "postal_code": "",
-    "city": "Wadena",
-    "province": "Saskatchewan",
-    "phone": "3065545521",
-    "fax": "3065545531"
-}
-
-Wakaw:
-
-{
-    "address": "211 Main Street",
-    "address2": "Wakaw Rec Centre",
-    "postal_code": "",
-    "city": "Wakaw",
-    "province": "Saskatchewan",
-    "phone": "3067526230",
-    "fax": "3067526126"
-}
-
-Wynard:
-
-{
-    "address": "Box 1449 – 410 Avenue C East",
-    "address2": "",
-    "postal_code": "S0A 4T0",
-    "city": "Wynyard",
-    "province": "Saskatchewan",
-    "phone": "3065545521",
-    "fax": "3065545531"
-}
-
-Beauval:
-
-{
-    "address": "Beaver Avenue",
-    "address2": "St. Mary Magdalene Catholic Church",
-    "postal_code": "",
-    "city": "Beauval",
-    "province": "Saskatchewan",
-    "phone": "3062367575",
-    "fax": "3062367598"
-}
-
-Black Lake:
-
-{
-    "address": "118 Allsaints Street",
-    "address2": "Band Hall",
-    "postal_code": "",
-    "city": "Black Lake",
-    "province": "Saskatchewan",
-    "phone": "3064254505",
-    "fax": "3064254269"
-}
-
-Buffalo Narrows:
-
-{
-    "address": "310 Davy Street",
-    "address2": "Provincial Building",
-    "postal_code": "",
-    "city": "Buffalo Narrows",
-    "province": "Saskatchewan",
-    "phone": "3062367575",
-    "fax": "3062367598"
-}
-
-Buffalo River Dene Nation:
-
-{
-    "address": "Band Hall",
-    "address2": "",
-    "postal_code": "",
-    "city": "Buffalo River Dene Nation",
-    "province": "Saskatchewan",
-    "phone": "3062367575",
-    "fax": "3062367598"
-}
-
-Canoe Lake Cree First Nation:
-
-{
-    "address": "Band Hall",
-    "address2": "",
-    "postal_code": "",
-    "city": "Canoe Lake Cree First Nation",
-    "province": "Saskatchewan",
-    "phone": "3062367575",
-    "fax": "3062367598"
-}
-
-Creighton:
-
-{
-    "address": "298 1st Street East",
-    "address2": "Provincial Building",
-    "postal_code": "",
-    "city": "Creighton",
-    "province": "Saskatchewan",
-    "phone": "3064254505",
-    "fax": "3064254269"
-}
-
-Cumberland House:
-
-{
-    "address": "19 Cumberland Street",
-    "address2": "Village Office",
-    "postal_code": "",
-    "city": "Cumberland House",
-    "province": "Saskatchewan",
-    "phone": "3064254505",
-    "fax": "3064254269"
-}
-
-Deschambault Lake:
-
-{
-    "address": "Band Office",
-    "address2": "Kistapiskaw Street",
-    "postal_code": "",
-    "city": "Deschambault Lake",
-    "province": "Saskatchewan",
-    "phone": "3064254505",
-    "fax": "3064254269"
-}
-
-Fond du Lac:
-
-{
-    "address": "Band Office",
-    "address2": "Gamache Street",
-    "postal_code": "",
-    "city": "Fond du Lac",
-    "province": "Saskatchewan",
-    "phone": "3064254505",
-    "fax": "3064254269"
-}
-
-Hudson Bay:
-
-{
-    "address": "304 Main Street",
-    "address2": "Town Hall",
-    "postal_code": "",
-    "city": "Hudson Bay",
-    "province": "Saskatchewan",
-    "phone": "3067526230",
-    "fax": "3067526126"
-}
-
-Ile a la Crosse:
-
-{
-    "address": "P10 Lajeunesse Avenue",
-    "address2": "Provincial Building",
-    "postal_code": "",
-    "city": "Ile a la Crosse",
-    "province": "Saskatchewan",
-    "phone": "3062367575",
-    "fax": "3062367598"
-}
-
-La Loche:
-
-{
-    "address": "La Loche Avenue",
-    "address2": "Provincial Building",
-    "postal_code": "",
-    "city": "La Loche",
-    "province": "Saskatchewan",
-    "phone": "3062367575",
-    "fax": "3062367598"
-}
-
-Montreal Lake:
-{
-    "address": "Band Hall",
-    "address2": "Montreal Lake Cree Nation",
-    "postal_code": "",
-    "city": "Montreal Lake",
-    "province": "Saskatchewan",
-    "phone": "3069532640",
-    "fax": "3069532819"
-}
-
-Pelican Narrows:
-
-{
-    "address": "Band Hall",
-    "address2": "#1 PCLP Bear Street",
-    "postal_code": "",
-    "city": "Pelican Narrows",
-    "province": "Saskatchewan",
-    "phone": "3069532640",
-    "fax": "3069532819"
-}
-
-Pinehouse:
-
-{
-    "address": "L.C.A. Hall",
-    "address2": "Hilltop Avenue",
-    "postal_code": "",
-    "city": "Pinehouse",
-    "province": "Saskatchewan",
-    "phone": "3064254505",
-    "fax": "3064254269"
-}
-
-Sandy Bay:
-
-{
-    "address": "Gary Morin Memorial Hall",
-    "address2": "",
-    "postal_code": "",
-    "city": "Sandy Bay",
-    "province": "Saskatchewan",
-    "phone": "3069532640",
-    "fax": "3069532819"
-}
-
-Southend:
-
-{
-    "address": "Band Hall",
-    "address2": "Block 2, Lots 20 and 21, Lagoon Road",
-    "postal_code": "",
-    "city": "Southend",
-    "province": "Saskatchewan",
-    "phone": "3064254505",
-    "fax": "3064254269"
-}
-
-St. Walburg:
-
-{
-    "address": "521 4th Street East",
-    "address2": "Elk’s Hall",
-    "postal_code": "",
-    "city": "St. Walburg",
-    "province": "Saskatchewan",
-    "phone": "3068256585",
-    "fax": "3068256497"
-}
-
-Turnor Lake:
-
-{
-    "address": "10 Young Street",
-    "address2": "Skating Rink (Upstairs)",
-    "postal_code": "",
-    "city": "Turnor Lake",
-    "province": "Saskatchewan",
-    "phone": "3062367575",
-    "fax": "3062367598"
-}
-
-Wollaston Lake:
-
-{
-    "address": "Senator Angus Tsannie Memorial Centre",
-    "address2": "North Point",
-    "postal_code": "",
-    "city": "Wollaston Lake",
-    "province": "Saskatchewan",
-    "phone": "3064254505",
-    "fax": "3064254269"
-}
-
-skipHere
-
-Ahtahkakoop Cree Nation:
-{
-    "address": "Old Band Office",
-    "address2": "Building #4",
-    "postal_code": "",
-    "city": "Ahtahkakoop Cree Nation",
-    "province": "Saskatchewan",
-    "phone": "3069532640",
-    "fax": "3069532819"
-}
-
-Beardy's and Okemasis' Cree Nation: {
-    "address": "Beardy’s Justice Building",
-    "address2": "",
-    "postal_code": "",
-    "city": "Beardy's and Okemasis' Cree Nation",
-    "province": "Saskatchewan",
-    "phone": "3069337052",
-    "fax": "3069337043"
-}
-
-Biggar: {
-    "address": "319 1st Ave. East",
-    "address2": "Biggar Community Hall",
-    "postal_code": "",
-    "city": "Biggar",
-    "province": "Saskatchewan",
-    "phone": "3064467400",
-    "fax": "3064467432"
-}
-
-Blaine Lake: {
-    "address": "2nd Floor, 218 2nd Avenue East",
-    "address2": "Blaine Lake Curling Club",
-    "postal_code": "",
-    "city": "Blaine Lake",
-    "province": "Saskatchewan",
-    "phone": "3069337052",
-    "fax": "3069337043"
-}
-
-Carrot River: {
-    "address": "3240 3rd Avenue",
-    "address2": "Carrot River Community Hall",
-    "postal_code": "",
-    "city": "Carrot River",
-    "province": "Saskatchewan",
-    "phone": "3067526230",
-    "fax": "3067526126"
-}
-
-Cut Knife:{
-    "address": "204 Otter Street",
-    "address2": "Curling Rink",
-    "postal_code": "",
-    "city": "Cut Knife",
-    "province": "Saskatchewan",
-    "phone": "3064467400",
-    "fax": "3064467432"
-}
-
-English River First Nation: {
-    "address": "Band Hall",
-    "address2": "",
-    "postal_code": "",
-    "city": "English River First Nation",
-    "province": "Saskatchewan",
-    "phone": "3062367575",
-    "fax": "3062367598"
-}
---------------------------
-Humboldt: {
-    "address": "805 8th Avenue",
-    "address2": "Court House",
-    "postal_code": "",
-    "city": "Humboldt",
-    "province": "Saskatchewan",
-    "phone": "3069337052",
-    "fax": "3069337043"
-}
-
-Loon Lake: {
-    "address": "Recreational Centre",
-    "address2": "First Street South",
-    "postal_code": "",
-    "city": "Loon Lake",
-    "province": "Saskatchewan",
-    "phone": "3062367575",
-    "fax": "3062367598"
-}
-
-Nipawin: {
-    "address": "210 1st Street East",
-    "address2": "McNevin Building",
-    "postal_code": "S3N 0H6",
-    "city": "Nipawin",
-    "province": "Saskatchewan",
-    "phone": "3067526230",
-    "fax": "3067526126"
-}
-
-Onion Lake Cree Nation:
-
-"Melfort": {
-    "address": "Box 4480 – 107 Crawford Avenue East",
-    "address2": "",
-    "postal_code": "S0E 1A0",
-    "city": "Melfort",
-    "province": "Saskatchewan",
-    "phone": "3067526230",
-    "fax": "3067526126"
-}
-
-"Meadow Lake": {
-    "address": "207 3rd Avenue East",
-    "address2": "",
-    "postal_code": "S9X 1E7",
-    "city": "Meadow Lake",
-    "province": "Saskatchewan",
-    "phone": "3062367575",
-    "fax": "3062367598"
-}
-
-"Lloydminster": {
-    "address": "4815 – 50th Street",
-    "address2": "",
-    "postal_code": "S9V 0M8",
-    "city": "Lloydminster",
-    "province": "Saskatchewan",
-    "phone": "3068256585",
-    "fax": "3068256497"
-}
-
-"Pierceland": {
-    "address": "First Avenue South",
-    "address2": "Community Hall",
-    "postal_code": "",
-    "city": "Pierceland",
-    "province": "Saskatchewan",
-    "phone": "3062367575",
-    "fax": "3062367598",
-}
-
-"Punnichy": {
-    "address": "609 6th Avenue",
-    "address2": "Community Hall",
-    "postal_code": "",
-    "city": "Punnichy",
-    "province": "Saskatchewan",
-    "phone": "3065545521",
-    "fax": "3065545531",
-}
-
-"Rose Valley": {
-    "address": "316 1st Avenue North",
-    "address2": "Community Centre",
-    "postal_code": "",
-    "city": "Rose Valley",
-    "province": "Saskatchewan",
-    "phone": "3065545521",
-    "fax": "3065545531"
-}
-
-
-"Rosthern": {
-    "address": "2008 6th Street",
-    "address2": "Lions Hall",
-    "postal_code": "",
-    "city": "Rosthern",
-    "province": "Saskatchewan",
-    "phone": "3069337052",
-    "fax": "3069337043",
-}
-
-
-"Shellbrook": {
-    "address": "103 Railway Avenue",
-    "address2": "Shellbrook Community Hall",
-    "postal_code": "",
-    "city": "Shellbrook",
-    "province": "Saskatchewan",
-    "phone": "3069532640",
-    "fax": "3069532819",
-}
-
-"Spiritwood": {
-    "address": "303A 1st Street East",
-    "address2": "Civic Centre",
-    "postal_code": "",
-    "city": "Spiritwood",
-    "province": "Saskatchewan",
-    "phone": "3064467400",
-    "fax": "3064467432",
-}
-
-"Stanley Mission": {
-    "address": "643 Metos Street",
-    "address2": "Hamlet Hall",
-    "postal_code": "",
-    "city": "Stanley Mission",
-    "province": "Saskatchewan",
-    "phone": "3064254505",
-    "fax": "3064254269",
-}
-
-"Unity": {
-    "address": "312 Main Street",
-    "address2": "Legion Hall",
-    "postal_code": "",
-    "city": "Unity",
-    "province": "Saskatchewan",
-    "phone": "3064467400",
-    "fax": "3064467432",
-}
-
-Whitefish (Big River) First Nation:
-{
-    "address": "Multi-Purpose Building",
-    "address2": "",
-    "postal_code": "",
-    "city": "Whitefish (Big River) First Nation",
-    "province": "Saskatchewan",
-    "phone": "3069532640",
-    "fax": "3069532819",
-}          
-
-------
-
-{
-    "address": "Box 117 – 1320 La Ronge Avenue",
-    "address2": "",
-    "postal_code": "",
-    "city": "La Ronge",
-    "province": "Saskatchewan",
-    "phone": "3064254505",
-    "fax": "3064254269"
-}
-{
-    "address": "177 Segwun Avenue",
-    "address2": "Provincial Building",
-    "postal_code": "",
-    "city": "Fort Qu’Appelle",
-    "province": "Saskatchewan",
-    "phone": "3067875250",
-    "fax": "3067877037",
-}
-
+[
+    {
+        "address": "201 3rd Avenue West",
+        "address2": "Prince of Wales Cultural & Recreational Centre",
+        "postal_code": "S0H 0B0",
+        "city": "Assiniboia",
+        "province": "Saskatchewan",
+        "phone": "3066943612",
+        "fax": "3066943043",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "715 Main Street",
+        "address2": "Community Hall",
+        "postal_code": "S0G 0K0",
+        "city": "Broadview",
+        "province": "Saskatchewan",
+        "phone": "3067861400",
+        "fax": "3067861422",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "102 Main Street",
+        "address2": "Civic Centre",
+        "postal_code": "S0C 0R0",
+        "city": "Carlyle",
+        "province": "Saskatchewan",
+        "phone": "3066374528",
+        "fax": "3066374536",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "418 Main Street",
+        "address2": "Canora Town Office Building",
+        "postal_code": "S0A 0L0",
+        "city": "Canora",
+        "province": "Saskatchewan",
+        "phone": "3067861400",
+        "fax": "3067861422",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "800 4th Avenue",
+        "address2": "S.N. Boreen Community Centre",
+        "postal_code": "S0A 0X0",
+        "city": "Esterhazy",
+        "province": "Saskatchewan",
+        "phone": "3067861400",
+        "fax": "3067861422",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "423 Grand Avenue",
+        "address2": "Memorial Hall",
+        "postal_code": "S0G 2K0",
+        "city": "Indian Head",
+        "province": "Saskatchewan",
+        "phone": "3067875250",
+        "fax": "3067877037",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "241 2nd Street",
+        "address2": "Crowstand Centre",
+        "postal_code": "S0A 1S0",
+        "city": "Kamsack",
+        "province": "Saskatchewan",
+        "phone": "3067861400",
+        "fax": "3067861422",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "402 1st Avenue W",
+        "address2": "Community Centre",
+        "postal_code": "S0N 1H0",
+        "city": "Leader",
+        "province": "Saskatchewan",
+        "phone": "3067788390",
+        "fax": "3067788581",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "218 Maple Street",
+        "address2": "Legion Hall",
+        "postal_code": "S0N 1N0",
+        "city": "Maple Creek",
+        "province": "Saskatchewan",
+        "phone": "3067788390",
+        "fax": "3067788581",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "709 Carleton Street",
+        "address2": "Provincial Building",
+        "postal_code": "S0G 3N0",
+        "city": "Moosomin",
+        "province": "SaskatchewanSK",
+        "phone": "3067861400",
+        "fax": "3067861422",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "400 Saskatchewan Avenue West",
+        "address2": "Town Hall",
+        "postal_code": "S0L 2N0",
+        "city": "Outlook",
+        "province": "Saskatchewan",
+        "phone": "3069337052",
+        "fax": "3069337043",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "814 Highway 4 North",
+        "address2": "Elks Lodge",
+        "postal_code": "S0L 2V0",
+        "city": "Rosetown",
+        "province": "Saskatchewan",
+        "phone": "3069337052",
+        "fax": "3069337043",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "401 3rd Street West",
+        "address2": "Court House",
+        "postal_code": "S0N 2M0",
+        "city": "Shaunavon",
+        "province": "Saskatchewan",
+        "phone": "3067788390",
+        "fax": "3067788581",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "254 Main Street North",
+        "address2": "Wadena Community Legion Hall",
+        "postal_code": "S0A 4J0",
+        "city": "Wadena",
+        "province": "Saskatchewan",
+        "phone": "3065545521",
+        "fax": "3065545531",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "211 Main Street",
+        "address2": "Wakaw Rec Centre",
+        "postal_code": "S0K 4P0",
+        "city": "Wakaw",
+        "province": "Saskatchewan",
+        "phone": "3067526230",
+        "fax": "3067526126",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "Box 1449 – 410 Avenue C East",
+        "address2": "",
+        "postal_code": "S0A 4T0",
+        "city": "Wynyard",
+        "province": "Saskatchewan",
+        "phone": "3065545521",
+        "fax": "3065545531",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": false
+    },
+    {
+        "address": "Beaver Avenue",
+        "address2": "St. Mary Magdalene Catholic Church",
+        "postal_code": "S0M 0G0",
+        "city": "Beauval",
+        "province": "Saskatchewan",
+        "phone": "3062367575",
+        "fax": "3062367598",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "118 Allsaints Street",
+        "address2": "Band Hall",
+        "postal_code": "S0J 0H0",
+        "city": "Black Lake",
+        "province": "Saskatchewan",
+        "phone": "3064254505",
+        "fax": "3064254269",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "310 Davy Street",
+        "address2": "Provincial Building",
+        "postal_code": "S0M 0J0",
+        "city": "Buffalo Narrows",
+        "province": "Saskatchewan",
+        "phone": "3062367575",
+        "fax": "3062367598",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "Band Hall",
+        "address2": "",
+        "postal_code": "S0M 0S0",
+        "city": "Buffalo River Dene Nation",
+        "province": "Saskatchewan",
+        "phone": "3062367575",
+        "fax": "3062367598",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "Band Hall",
+        "address2": "",
+        "postal_code": "S0M 0K0",
+        "city": "Canoe Lake Cree First Nation",
+        "province": "Saskatchewan",
+        "phone": "3062367575",
+        "fax": "3062367598",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "298 1st Street East",
+        "address2": "Provincial Building",
+        "postal_code": "S0P 0A0",
+        "city": "Creighton",
+        "province": "Saskatchewan",
+        "phone": "3064254505",
+        "fax": "3064254269",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "19 Cumberland Street",
+        "address2": "Village Office",
+        "postal_code": "S0E 0S0",
+        "city": "Cumberland House Cree Nation",
+        "province": "Saskatchewan",
+        "phone": "3064254505",
+        "fax": "3064254269",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "Band Office",
+        "address2": "Kistapiskaw Street",
+        "postal_code": "S0P 0C0",
+        "city": "Deschambault Lake",
+        "province": "Saskatchewan",
+        "phone": "3064254505",
+        "fax": "3064254269",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "Band Office",
+        "address2": "Gamache Street",
+        "postal_code": "S0J 0W0",
+        "city": "Fond du Lac",
+        "province": "Saskatchewan",
+        "phone": "3064254505",
+        "fax": "3064254269",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "304 Main Street",
+        "address2": "Town Hall",
+        "postal_code": "S0E 0Y0",
+        "city": "Hudson Bay",
+        "province": "Saskatchewan",
+        "phone": "3067526230",
+        "fax": "3067526126",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "P10 Lajeunesse Avenue",
+        "address2": "Provincial Building",
+        "postal_code": "S0M 1C0",
+        "city": "Ile a la Crosse",
+        "province": "Saskatchewan",
+        "phone": "3062367575",
+        "fax": "3062367598",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "La Loche Avenue",
+        "address2": "Provincial Building",
+        "postal_code": "S0M 1G0",
+        "city": "La Loche",
+        "province": "Saskatchewan",
+        "phone": "3062367575",
+        "fax": "3062367598",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "Band Hall",
+        "address2": "",
+        "postal_code": "S0J 1Y0",
+        "city": "Montreal Lake Cree Nation",
+        "province": "Saskatchewan",
+        "phone": "3069532640",
+        "fax": "3069532819",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "Band Hall",
+        "address2": "#1 PCLP Bear Street",
+        "postal_code": "S0P 0E0",
+        "city": "Pelican Narrows",
+        "province": "Saskatchewan",
+        "phone": "3069532640",
+        "fax": "3069532819",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "L.C.A. Hall",
+        "address2": "Hilltop Avenue",
+        "postal_code": "S0J 2B0",
+        "city": "Pinehouse",
+        "province": "Saskatchewan",
+        "phone": "3064254505",
+        "fax": "3064254269",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "Gary Morin Memorial Hall",
+        "address2": "",
+        "postal_code": "R0H 0T0",
+        "city": "Sandy Bay",
+        "province": "Saskatchewan",
+        "phone": "3069532640",
+        "fax": "3069532819",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "Band Hall",
+        "address2": "Block 2, Lots 20 and 21, Lagoon Road",
+        "postal_code": "S0J 2L0",
+        "city": "Southend",
+        "province": "Saskatchewan",
+        "phone": "3064254505",
+        "fax": "3064254269",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "521 4th Street East",
+        "address2": "Elk’s Hall",
+        "postal_code": "S0M 2T0",
+        "city": "St. Walburg",
+        "province": "Saskatchewan",
+        "phone": "3068256585",
+        "fax": "3068256497",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "10 Young Street",
+        "address2": "Skating Rink (Upstairs)",
+        "postal_code": "",
+        "city": "Turnor Lake (Birch Narrows Dene Nation)",
+        "province": "Saskatchewan",
+        "phone": "3062367575",
+        "fax": "3062367598",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "Senator Angus Tsannie Memorial Centre",
+        "address2": "North Point",
+        "postal_code": "",
+        "city": "Wollaston Lake",
+        "province": "Saskatchewan",
+        "phone": "3064254505",
+        "fax": "3064254269",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "Old Band Office",
+        "address2": "Building #4",
+        "postal_code": "",
+        "city": "Ahtahkakoop Cree Nation",
+        "province": "Saskatchewan",
+        "phone": "3069532640",
+        "fax": "3069532819",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "Beardy’s Justice Building",
+        "address2": "",
+        "postal_code": "",
+        "city": "Beardy's and Okemasis Cree Nation",
+        "province": "Saskatchewan",
+        "phone": "3069337052",
+        "fax": "3069337043",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "319 1st Ave. East",
+        "address2": "Biggar Community Hall",
+        "postal_code": "",
+        "city": "Biggar",
+        "province": "Saskatchewan",
+        "phone": "3064467400",
+        "fax": "3064467432",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "2nd Floor, 218 2nd Avenue East",
+        "address2": "Blaine Lake Curling Club",
+        "postal_code": "",
+        "city": "Blaine Lake",
+        "province": "Saskatchewan",
+        "phone": "3069337052",
+        "fax": "3069337043",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "3240 3rd Avenue",
+        "address2": "Carrot River Community Hall",
+        "postal_code": "",
+        "city": "Carrot River",
+        "province": "Saskatchewan",
+        "phone": "3067526230",
+        "fax": "3067526126",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "204 Otter Street",
+        "address2": "Curling Rink",
+        "postal_code": "",
+        "city": "Cut Knife",
+        "province": "Saskatchewan",
+        "phone": "3064467400",
+        "fax": "3064467432",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "Band Hall",
+        "address2": "",
+        "postal_code": "",
+        "city": "English River First Nation",
+        "province": "Saskatchewan",
+        "phone": "3062367575",
+        "fax": "3062367598",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "805 8th Avenue",
+        "address2": "Court House",
+        "postal_code": "",
+        "city": "Humboldt",
+        "province": "Saskatchewan",
+        "phone": "3069337052",
+        "fax": "3069337043",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "Recreational Centre",
+        "address2": "First Street South",
+        "postal_code": "",
+        "city": "Loon Lake",
+        "province": "Saskatchewan",
+        "phone": "3062367575",
+        "fax": "3062367598",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "210 1st Street East",
+        "address2": "McNevin Building",
+        "postal_code": "S3N 0H6",
+        "city": "Nipawin",
+        "province": "Saskatchewan",
+        "phone": "3067526230",
+        "fax": "3067526126",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "Seekaskootch I R",
+        "address2": "Band Office",
+        "postal_code": "S0M 2E0",
+        "city": "Onion Lake Cree Nation",
+        "province": "Saskatchewan",
+        "phone": "3068256585",
+        "fax": "3068256497",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+
+    {
+        "address": "Box 4480 – 107 Crawford Avenue East",
+        "address2": "",
+        "postal_code": "S0E 1A0",
+        "city": "Melfort",
+        "province": "Saskatchewan",
+        "phone": "3067526230",
+        "fax": "3067526126",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": false
+    },
+    {
+        "address": "207 3rd Avenue East",
+        "address2": "",
+        "postal_code": "S9X 1E7",
+        "city": "Meadow Lake",
+        "province": "Saskatchewan",
+        "phone": "3062367575",
+        "fax": "3062367598",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": false
+    },
+    {
+        "address": "4815 – 50th Street",
+        "address2": "",
+        "postal_code": "S9V 0M8",
+        "city": "Lloydminster",
+        "province": "Saskatchewan",
+        "phone": "3068256585",
+        "fax": "3068256497",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": false
+    },
+    {
+        "address": "First Avenue South",
+        "address2": "Community Hall",
+        "postal_code": "",
+        "city": "Pierceland",
+        "province": "Saskatchewan",
+        "phone": "3062367575",
+        "fax": "3062367598",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "609 6th Avenue",
+        "address2": "Community Hall",
+        "postal_code": "",
+        "city": "Punnichy",
+        "province": "Saskatchewan",
+        "phone": "3065545521",
+        "fax": "3065545531",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "316 1st Avenue North",
+        "address2": "Community Centre",
+        "postal_code": "",
+        "city": "Rose Valley",
+        "province": "Saskatchewan",
+        "phone": "3065545521",
+        "fax": "3065545531",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "2008 6th Street",
+        "address2": "Lions Hall",
+        "postal_code": "",
+        "city": "Rosthern",
+        "province": "Saskatchewan",
+        "phone": "3069337052",
+        "fax": "3069337043",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "103 Railway Avenue",
+        "address2": "Shellbrook Community Hall",
+        "postal_code": "",
+        "city": "Shellbrook",
+        "province": "Saskatchewan",
+        "phone": "3069532640",
+        "fax": "3069532819",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "303A 1st Street East",
+        "address2": "Civic Centre",
+        "postal_code": "",
+        "city": "Spiritwood",
+        "province": "Saskatchewan",
+        "phone": "3064467400",
+        "fax": "3064467432",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "643 Metos Street",
+        "address2": "Hamlet Hall",
+        "postal_code": "",
+        "city": "Stanley Mission",
+        "province": "Saskatchewan",
+        "phone": "3064254505",
+        "fax": "3064254269",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "312 Main Street",
+        "address2": "Legion Hall",
+        "postal_code": "",
+        "city": "Unity",
+        "province": "Saskatchewan",
+        "phone": "3064467400",
+        "fax": "3064467432",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "Multi-Purpose Building",
+        "address2": "",
+        "postal_code": "",
+        "city": "Whitefish (Big River) First Nation",
+        "province": "Saskatchewan",
+        "phone": "3069532640",
+        "fax": "3069532819",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },          
+    {
+        "address": "Box 117 – 1320 La Ronge Avenue",
+        "address2": "",
+        "postal_code": "",
+        "city": "La Ronge",
+        "province": "Saskatchewan",
+        "phone": "3064254505",
+        "fax": "3064254269",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": false
+    },
+    {
+        "address": "177 Segwun Avenue",
+        "address2": "Provincial Building",
+        "postal_code": "",
+        "city": "Fort Qu’Appelle",
+        "province": "Saskatchewan",
+        "phone": "3067875250",
+        "fax": "3067877037",
+        "court_type": ["Provincial Court", "Kings Bench"],
+        "orbiter": true
+    },
+    {
+        "address": "1815 Smith Street",
+        "address2": "",
+        "postal_code": "S4P 2N5",
+        "city": "Regina",
+        "province": "Saskatchewan",
+        "phone": "3067875250",
+        "fax": "3067877037",
+        "court_type": ["Provincial Court" , "Kings Bench", "Appeal Court"],
+        "orbiter": false 
+    },
+    {
+        "address": "1301 Fourth Street",
+        "address2": "",
+        "postal_code": "S4A 0X3",
+        "city": "Estevan",
+        "province": "Saskatchewan",
+        "phone": "3066374380",
+        "fax": "3066374384",
+        "court_type": ["Provincial Court" , "Kings Bench"],
+        "orbiter": false 
+    },
+    {
+        "address": "211 5th Avenue West",
+        "address2": "",
+        "postal_code": "S0L 1S0",
+        "city": "Kindersley",
+        "province": "Saskatchewan",
+        "phone": "3069337676",
+        "fax": "3069337406",
+        "court_type": ["Provincial Court" , "Kings Bench"],
+        "orbiter": true 
+    },
+    {
+        "address": "105-2nd Ave. West",
+        "address2": "",
+        "postal_code": "S0A 2P0",
+        "city": "Melville",
+        "province": "Saskatchewan",
+        "phone": "3067867500",
+        "fax": "3067867501",
+        "court_type": ["Provincial Court" , "Kings Bench"],
+        "orbiter": true 
+    },
+    {
+        "address": "21 Manitoba Street East",
+        "address2": "",
+        "postal_code": "S6H 0A1",
+        "city": "Moose Jaw",
+        "province": "Saskatchewan",
+        "phone": "3066943838",
+        "fax": "3066943899",
+        "court_type": ["Provincial Court" , "Kings Bench"],
+        "orbiter": false 
+    },
+    {
+        "address": "1082 103rd Street",
+        "address2": "",
+        "postal_code": "S9A 1K1",
+        "city": "North Battleford",
+        "province": "Saskatchewan",
+        "phone": "3064461983",
+        "fax": "3064462120",
+        "court_type": ["Provincial Court" , "Kings Bench"],
+        "orbiter": false 
+    },
+    {
+        "address": "1352 Central Avenue",
+        "address2": "",
+        "postal_code": "S6V 6P5",
+        "city": "Prince Albert",
+        "province": "Saskatchewan",
+        "phone": "3069532530",
+        "fax": "3069532639",
+        "court_type": ["Provincial Court" , "Kings Bench"],
+        "orbiter": false 
+    },
+    {
+        "address": "220-19th Street East",
+        "address2": "",
+        "postal_code": "S7K 0A2",
+        "city": "Saskatoon",
+        "province": "Saskatchewan",
+        "phone": "3069337676",
+        "fax": "3069337406",
+        "court_type": ["Provincial Court" , "Kings Bench", "Appeal Court"],
+        "orbiter": false 
+    },
+    {
+        "address": "410 Central Ave North",
+        "address2": "",
+        "postal_code": "S9H 0L6",
+        "city": "Swift Current",
+        "province": "Saskatchewan",
+        "phone": "3067788100",
+        "fax": "3067788150",
+        "court_type": ["Provincial Court" , "Kings Bench"],
+        "orbiter": false 
+    },
+    {
+        "address": "202-3rd Street NE",
+        "address2": "",
+        "postal_code": "S4H 0W2",
+        "city": "Weyburn",
+        "province": "Saskatchewan",
+        "phone": "3066374380",
+        "fax": "3066374384",
+        "court_type": ["Provincial Court" , "Kings Bench"],
+        "orbiter": true 
+    },
+    {
+        "address": "39 Smith Street East",
+        "address2": "",
+        "postal_code": "S3N 0H6",
+        "city": "Yorkton",
+        "province": "Saskatchewan",
+        "phone": "3067867500",
+        "fax": "3067867501",
+        "court_type": ["Provincial Court" , "Kings Bench"],
+        "orbiter": false 
+    }
+]
