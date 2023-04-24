@@ -250,7 +250,6 @@ export default function AddCourtTime() {
             name="circuitPoint" 
             value={formData.circuitPoint} 
             onChange={handleChange} 
-            required
         >
             {formData.city && skProvincialCourtOffices[formData.city] ? (
                 <>

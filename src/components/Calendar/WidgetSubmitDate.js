@@ -248,7 +248,6 @@ function groupByCourtDate(courtSittings) {
             name="circuitPoint" 
             value={formData.circuitPoint} 
             onChange={handleChange} 
-            required
         >
             {formData.city && skProvincialCourtOffices[formData.city] ? (
                 <>
