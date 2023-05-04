@@ -52,16 +52,18 @@ export default function DayLabel({courtAppearance, city}) {
     return (
     <div className={`label-wrapper ${filters.cities[city].hidden && `hide-city-label`}`}>
         <div className="label-row regina" onClick={screenSize == 'small' ? () => setLabelOpen(!labelOpen) : handleClick}>
-        <div>
-            <p>
-                {courtAppearance.court_ID.city}
-                {isUserInCourt() && `, ${getUserAttendanceInfo().timePeriod}`}
-                {getUserAttendanceInfo()?.court_type !== undefined && getCourtIcon(getUserAttendanceInfo()?.court_type)}
-                {getUserAttendanceInfo()?.courtRoom && `#${getUserAttendanceInfo()?.courtRoom}`}
-            </p>
-        </div>
-            <div>
-                <span className="label-attendees">{courtAppearance.courtAttendances.length}<i class="fas fa-user-friends"></i></span>
+            <div className="flex-between">
+                <span>{courtAppearance.court_ID.city}</span>
+                <span className="label-attendees attendees-lg">{courtAppearance.courtAttendances.length}<i class="fas fa-user-friends"></i></span>
+            </div>
+            
+            <div className="flex-row flex-attendees">
+                <span className='pad-r mini-font'>
+                    {isUserInCourt() && `${getUserAttendanceInfo().timePeriod} `}
+                    {getUserAttendanceInfo()?.court_type !== undefined && getCourtIcon(getUserAttendanceInfo()?.court_type)}
+                    {getUserAttendanceInfo()?.courtRoom && ` #${getUserAttendanceInfo()?.courtRoom}`}
+                </span>
+                <span className="label-attendees attendees-sm">{courtAppearance.courtAttendances.length}<i class="fas fa-user-friends friends-sm"></i></span>
                 {screenSize !== 'small' && (
                     <span className="label-dropdown">
                         <i className={`${labelOpen ? `fas fa-angle-up pplUp` : `fas fa-angle-down`}`}></i>
@@ -76,7 +78,12 @@ export default function DayLabel({courtAppearance, city}) {
             {
                 courtAppearance?.courtAttendances.map((appearance, i) => (
                     
-                    <li key={i}>{appearance?.user_ID?.first_name} {appearance?.user_ID?.last_name}, {appearance?.timePeriod} {getCourtIcon(appearance?.court_type)} {appearance?.courtRoom && `#${appearance?.courtRoom}`}</li>
+                    <li className="flex-between pad-r" key={i}>
+                        <span>{appearance?.user_ID?.first_name} {appearance?.user_ID?.last_name}</span>
+                        <div className="label-court-container">
+                            <span>{appearance?.timePeriod} {getCourtIcon(appearance?.court_type)} {appearance?.courtRoom && `#${appearance?.courtRoom}`}</span>
+                        </div>
+                    </li>
                 ))
             }
             </ul>
