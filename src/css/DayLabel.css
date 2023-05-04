@@ -43,3 +43,11 @@
 .label-dropdown .pplUp {
     padding-left: 10px;
 }
+
+.hide-city-label {
+    display: none;
+}
+
+.court-icon-container {
+    display: inline-block;
+}

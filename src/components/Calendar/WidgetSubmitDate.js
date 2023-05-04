@@ -94,6 +94,7 @@ function getCourtSittings() {
     })
     .catch(error => {
         console.error("Error fetching data: ", error);
+        console.log("Failed to get court sittings")
     });
 }
 
@@ -170,6 +171,7 @@ function groupByCourtDate(courtSittings) {
 
     // Third, I can create a POST request to submit the form
     // Make a POST request to submit the form
+    console.log("ABOUT TO POST COURTATTENDANCE")
     const courtAttendanceResponse = await fetch(`${baseURL}courtAttendance`, {
       method: "POST",
       headers: {
@@ -178,12 +180,15 @@ function groupByCourtDate(courtSittings) {
       body: JSON.stringify({
         courtSitting_ID,
         user_ID: userID,
-        prosecutor: formData.prosecutor,
-        description: formData.description,
+        court_type: formData.court_type,
         timePeriod: formData.timePeriod,
+        time: formData.time,
+        courtRoom: formData.courtRoom,
+        prosecutor: formData.prosecutor,
+        description: formData.description
       }),
     });
-
+    console.log("Court attendance posted")
     const courtAttendanceResult = await courtAttendanceResponse.json();
 
     // Update courtDates and userCourtDates in GlobalContext

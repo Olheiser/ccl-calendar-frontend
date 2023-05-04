@@ -742,3 +742,35 @@
   z-index: 1000;
 }
 
+.sum-attendees-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+  padding-bottom: 3px;
+}
+
+.sum-attendees-container:hover {
+  cursor: pointer;
+}
+
+.sum-attendees-count {
+  color:rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+}
+
+.attendee-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.attendee-city-heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.attendee-date-heading {
+  font-size: 20px;
+  font-weight: bold;
+}

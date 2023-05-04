@@ -182,9 +182,12 @@ export default function AddCourtTime() {
           body: JSON.stringify({
             courtSitting_ID,
             user_ID: userID,
-            prosecutor: formData.prosecutor,
-            description: formData.description,
+            court_type: formData.court_type,
             timePeriod: formData.timePeriod,
+            time: formData.time,
+            courtRoom: formData.courtRoom,
+            prosecutor: formData.prosecutor,
+            description: formData.description
           }),
         });
     
