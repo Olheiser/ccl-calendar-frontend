@@ -10,7 +10,7 @@ import dayjs from 'dayjs';
 
 function App() {
   const [currentMonth, setCurrentMonth] = useState(getMonth());
-  const { monthIndex, showEventModal, baseURL, setCourtDates } = useContext(GlobalContext)
+  const { monthIndex, showEventModal, baseURL, setCourtDates, userID } = useContext(GlobalContext)
 
   // This is the state we want to react to
   // Reading the context here
@@ -21,6 +21,37 @@ function App() {
   useEffect(() => {
     getCourtSittings();
   }, [])
+
+  // Add the useEffect hook for requesting push notification permission
+  useEffect(() => {
+    // Request user permission for push notifications
+    Notification.requestPermission().then((permission) => {
+      if (permission === "granted") {
+        // Subscribe to push notifications
+        navigator.serviceWorker.ready.then((registration) => {
+          const vapidPublicKey = "BNHrFmrPekpQ41LpNo7guRKSxTbfa9go30u1kwNchFLug1LTWckYfdxRz80XG-wmxluFvnkXGDsBtPyCocgtUH4";
+          const convertedVapidKey = urlBase64ToUint8Array(vapidPublicKey);
+          registration.pushManager
+            .subscribe({
+              userVisibleOnly: true,
+              applicationServerKey: convertedVapidKey,
+            })
+            .then((subscription) => {
+              // Send the subscription object to your server to save it
+              // for the user
+              fetch(`${baseURL}${userID}/push-subscription`, {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(subscription),
+              });
+            });
+        });
+      }
+    });
+  }, []); // Empty dependency array ensures this runs only once, when the component mounts
+
 
   function getCourtSittings() {
     fetch(`${baseURL}courtSittings/`, {
@@ -81,6 +112,18 @@ function App() {
       <Footer />
     </div>
   );
+}
+
+function urlBase64ToUint8Array(base64String) {
+  const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
+  const base64 = (base64String + padding).replace(/-/g, "+").replace(/_/g, "/");
+  const rawData = atob(base64);
+  const outputArray = new Uint8Array(rawData.length);
+  
+  for (let i = 0; i < rawData.length; ++i) {
+    outputArray[i] = rawData.charCodeAt(i);
+  }
+  return outputArray;
 }
 
 export default App;
