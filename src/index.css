@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Font Families: 
-'Oxygen', sans-serif;
-font-family: 'PT Sans', sans-serif; */
+
 
 /* Box sizing rules */
 *,
@@ -40,12 +38,6 @@ body {
   font-size: 1rem;
   background-color: #F8F8F8;
 }
-
-/* Make images easier to work with 
-img {
-  max-width: 100%;
-  display: block;
-}*/
 
 /* Natural flow and rhythm in articles by default */
 article > * + * {

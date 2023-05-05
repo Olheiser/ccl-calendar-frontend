@@ -21,7 +21,6 @@
     position: relative;
     padding-left: 10px;
     top: 3px;
-    /* Making the down arrow appear lighter (not bold) 1px makes it too thin */
     -webkit-text-stroke: 0.5px #c4b598;
 }
 
@@ -52,11 +51,6 @@
     text-decoration: none;
     color: #383838;
 }
-
-/* Account Dropdown */
-/*.account-dropdown-container {
-
-}*/
 
 .account-dropdown-menu {
     position: absolute;
