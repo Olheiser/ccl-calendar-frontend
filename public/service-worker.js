@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 // service-worker.js
 const CACHE_NAME = 'my-cache-v1';
 const urlsToCache = [
@@ -43,5 +44,24 @@ self.addEventListener('fetch', (event) => {
       }
       return fetch(event.request);
     })
+  );
+});
+
+self.addEventListener('push', event => {
+  const data = event.data.json();
+  const options = {
+    body: data.notification.body,
+    // icon: 'icon.png', // Uncomment and set the path to your notification icon
+    //badge: 'badge.png', // Set the path to your notification badge
+    // image: 'image.jpg', // Uncomment and set the path to your notification image
+    vibrate: [100, 50, 100],
+    data: {
+      dateOfArrival: Date.now(),
+      primaryKey: 1
+    }
+  };
+
+  event.waitUntil(
+    self.registration.showNotification(data.notification.title, options)
   );
 });

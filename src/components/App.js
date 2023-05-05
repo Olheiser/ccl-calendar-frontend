@@ -52,7 +52,6 @@ function App() {
     });
   }, []); // Empty dependency array ensures this runs only once, when the component mounts
 
-
   function getCourtSittings() {
     fetch(`${baseURL}courtSittings/`, {
         method: "GET",
